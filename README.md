@@ -11,7 +11,8 @@
 * sudo sh pop-color-change.sh
 * Wait for script to finish executing (~1.5 min)
 
-### Dependancies:
+### Dependencies (apt package manager):
+* sudo apt install sassc meson libglib2.0-dev inkscape optipng
 
 ### Additional info:
 * Some colour changes are documented, while some are not. Bellow are changes I remembered to document. Feel free to complete this list with colour modifications present in pop-color-change.sh.
