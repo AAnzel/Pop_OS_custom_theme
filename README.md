@@ -19,19 +19,19 @@
 
 * gtk-theme/gnome-shell/src/ :
 
-** checkbox.svg: ffad00 -> ff2e00
+	* checkbox.svg: ffad00 -> ff2e00
 
-** checkbox-dark.svg: fbb86c -> f9706b
+	* checkbox-dark.svg: fbb86c -> f9706b
 
-** checkbox-focused.svg = checkbox.svg
+	* checkbox-focused.svg = checkbox.svg
 
-** checkbox-focused-dark.svg = checkbox-dark.svg
+	* checkbox-focused-dark.svg = checkbox-dark.svg
 
-** toggle-on.svg = checkbox.svg
+	* toggle-on.svg = checkbox.svg
 
-** toggle-on-dark.svg = checkbox-dark.svg
+	* toggle-on-dark.svg = checkbox-dark.svg
 
-** toggle-on-intl.svg = checkbox-dark.svg
+	* toggle-on-intl.svg = checkbox-dark.svg
 
 
 * gtk-theme/gtk/src/light/gtk-2.0/assets.svg :
