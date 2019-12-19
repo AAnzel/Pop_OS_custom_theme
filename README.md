@@ -66,11 +66,11 @@
 
 ### Screenshots (dark variant):
 
-[Control Center](Screenshots/Control_center.png)
+![Control Center](Screenshots/Control_center.png)
 
-[File Manager](Screenshots/File_manager.png)
+![File Manager](Screenshots/File_manager.png)
 
-[Calendar](Screenshots/Calendar.png)
+![Calendar](Screenshots/Calendar.png)
 
-[Top Panel](Screenshots/Top_panel.png)
+![Top Panel](Screenshots/Top_panel.png)
 
