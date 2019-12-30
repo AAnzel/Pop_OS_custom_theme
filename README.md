@@ -1,18 +1,22 @@
-# BASH SCRIPT FOR MODIFYING OFFICIAL POP-OS GTK/GNOME SHELL THEME
+# Bash script for modifying official Pop-OS GTK/Gnome Shell theme
 
 ## Author:
 * Aleksandar Anžel
 
 ### About:
 * This script changes orange and blue/teal accent colours with red accent colour. This is done both for GTK and SHELL Pop-OS theme (light and dark variant).
-* Also, script makes Play font a default font for Gnome Shell. Therefore, you should download and install Play font before executing script. Play font download link: https://fonts.google.com/specimen/Play?selection.family=Play .
+* Also, script makes Play font a default font for the Gnome Shell. Therefore, you should download and install Play font before executing script. Play font download link: https://fonts.google.com/specimen/Play?selection.family=Play .
 
 ### Running:
-* sudo sh pop-color-change.sh
+```shell
+sudo sh pop-color-change.sh
+```
 * Wait for script to finish executing (~1.5 min)
 
 ### Dependencies (apt package manager):
-* sudo apt install sassc meson libglib2.0-dev inkscape optipng
+```shell
+sudo apt install sassc meson libglib2.0-dev inkscape optipng
+```
 
 ### Additional info:
 * Some colour changes are documented, while some are not. Bellow are changes I remembered to document. Feel free to complete this list with colour modifications present in pop-color-change.sh.
