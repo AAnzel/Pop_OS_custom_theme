@@ -214,5 +214,6 @@ sudo ninja install
 echo "####################################################################################"
 echo "============ Removing downloaded gtk-theme directory ============"
 echo
+cd ../../
 sudo rm -r gtk-theme
 
