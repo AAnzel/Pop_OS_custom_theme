@@ -1,10 +1,10 @@
-# Bash script for modifying official Pop-OS GTK/Gnome Shell theme
+# Bash script for modifying official Pop\_OS GTK/Gnome Shell theme
 
 ## Author:
 * Aleksandar Anžel
 
 ### About:
-* This script changes orange and blue/teal accent colours with red accent colour. This is done both for GTK and SHELL Pop-OS theme (light and dark variant).
+* This script changes orange and blue/teal accent colors with red accent color. This is done both for GTK and SHELL Pop-OS theme (light and dark variant).
 * Also, script makes Play font a default font for the Gnome Shell. Therefore, you should download and install Play font before executing script. Play font download link: https://fonts.google.com/specimen/Play?selection.family=Play .
 
 ### Running:
@@ -19,57 +19,11 @@ sudo apt install sassc meson libglib2.0-dev inkscape optipng
 ```
 
 ### Additional info:
-* Some colour changes are documented, while some are not. Bellow are changes I remembered to document. Feel free to complete this list with colour modifications present in pop-color-change.sh.
+* Color changes are all documented in [Dark_red_shell.sed](Dark_red_shell.sed) and [Dark_grey_shell.sed](Dark_grey_shell.sed). First document changes the native dark orange color with dark red color. Second document changes the native dark orange color with neutral grey color.
 
+If you wish to modify the original Pop\_OS theme with this script but with other accent color, you should change only [Dark_grey_shell.sed](Dark_grey_shell.sed) file.
 
-* gtk-theme/gnome-shell/src/ :
-
-	* checkbox.svg: ffad00 -> ff2e00
-
-	* checkbox-dark.svg: fbb86c -> f9706b
-
-	* checkbox-focused.svg = checkbox.svg
-
-	* checkbox-focused-dark.svg = checkbox-dark.svg
-
-	* toggle-on.svg = checkbox.svg
-
-	* toggle-on-dark.svg = checkbox-dark.svg
-
-	* toggle-on-intl.svg = checkbox-dark.svg
-
-
-* gtk-theme/gtk/src/light/gtk-2.0/assets.svg :
-
-1. 7b8896 -> 967b7b
-2. 98a2ac -> aa9696
-3. ffad00 -> ff2e00
-4. 63B1BC -> bc6464
-
-* gtk-theme/gtk/src/light/gtk-2.0/assets-external.svg :
-
-1. F9D386 -> f99a86
-2. ffad00 -> ff2e00
-
-* gtk-theme/gtk/src/light/gtk-3.20/assets.svg :
-
-1. 63B1BC -> bc6464
-2. 6ACAD8 -> d86a6a
-
-* gtk-theme/gtk/src/dark/gtk-2.0/assets.svg :
-
-1. FBB86C -> F9706b
-2. 63B1BC -> bc6464
-3. 6ACAD8 -> d86a6a
-
-* gtk-theme/gtk/src/dark/gtk-2.0/assets-external.svg :
-
-1. F9D386 -> f99a86
-2. 6ACAD8 -> d86a6a
-3. FBB86C -> F9706b
-
-
-### Screenshots (dark variant):
+### Screenshots (dark variant, dark red color scheme):
 
 ![Control Center](Screenshots/Control_center.png)
 
