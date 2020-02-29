@@ -4,7 +4,7 @@
 * Aleksandar Anžel
 
 ### About:
-* This script changes orange and blue/teal accent colors with red accent color. This is done both for GTK and SHELL Pop-OS theme (light and dark variant).
+* This script changes orange and blue/teal accent colors with red accent color. This is done both for GTK and SHELL Pop_OS theme (light and dark variant).
 * Also, script makes Play font a default font for the Gnome Shell. Therefore, you should download and install Play font before executing script. Play font download link: https://fonts.google.com/specimen/Play?selection.family=Play .
 
 ### Running:
