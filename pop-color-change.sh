@@ -46,6 +46,55 @@ GTKFILE_13="assets-external.svg"
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_11$GTKFILE_13
 
+# light/gtk-3.0
+echo "####################################################################################"
+echo "============ Modifying light/gtk-3.0 ============"
+echo
+GTKDESTDIR_21="gtk-theme/gtk/src/light/gtk-3.0/"
+
+echo "------------ Modifying light/gtk-3.0/_pop_os-colors.scss ------------"
+GTKFILE_21="_pop_os-colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_21$GTKFILE_21
+
+echo "------------ Modifying light/gtk-3.0/_ubuntu-colors.scss ------------"
+GTKFILE_22="_ubuntu-colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_21$GTKFILE_22
+
+echo "------------ Modifying light/gtk-3.0/_colors.scss ------------"
+GTKFILE_23="_colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_21$GTKFILE_23
+
+echo "------------ Modifying light/gtk-3.0/assets.svg ------------"
+GTKFILE_24="assets.svg"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_21$GTKFILE_24
+
+echo "------------ Modifying light/gtk-3.0/granite/_pallete.scss ------------"
+GTKFILE_25="granite/_palette.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_21$GTKFILE_25
+
+# Preparing assets rendering for this folder
+#echo "####################################################################################"
+#echo "============ Preparing assets rendering for light/gtk-3.0 ============"
+#echo
+#GTKFILE_26="assets/*"
+#GTKFILE_27="bullet-symbolic.svg"
+#GTKFILE_28="check-symbolic.svg"
+#GTKFILE_29="dash-symbolic.svg"
+#GTKFILE_30="assets/"
+
+#echo "------------ Removing existing assets from light/gtk-3.0/assets/ ------------"
+#rm $GTKDESTDIR_21$GTKFILE_26
+
+#echo "------------ Copying *-symbolic.svg to light/gtk-3.0/assets/ ------------"
+#cp $GTKDESTDIR_21$GTKFILE_27 $GTKDESTDIR_21$GTKFILE_30
+#cp $GTKDESTDIR_21$GTKFILE_28 $GTKDESTDIR_21$GTKFILE_30
+#cp $GTKDESTDIR_21$GTKFILE_29 $GTKDESTDIR_21$GTKFILE_30
+
 # light/gtk-3.20
 echo "####################################################################################"
 echo "============ Modifying light/gtk-3.20 ============"
@@ -118,6 +167,32 @@ GTKFILE_33="assets-external.svg"
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_31$GTKFILE_33
 
 
+# UPSTREAM THEMEING _new_
+echo "####################################################################################"
+echo "============ Modifying upstream/gtk+3.0 ============"
+echo
+GTKDESTDIR_41="gtk-theme/gtk/upstream/gtk+3.0/Adwaita/"
+
+echo "------------ Modifying gtkrc ------------"
+GTKFILE_41="gtkrc"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_41$GTKFILE_41
+
+echo "------------ Modifying assets.svg ------------"
+GTKFILE_42="assets.svg"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_41$GTKFILE_42
+
+echo "------------ Modifying _colors-public.scss ------------"
+GTKFILE_43="_colors-public.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_41$GTKFILE_43
+
+echo "------------ Modifying _colors.scss ------------"
+GTKFILE_44="_colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $GTKDESTDIR_41$GTKFILE_44
+
 # Initiate assets rendering for all above folders with moving to directory
 echo "####################################################################################"
 echo "============ Rendering assets ============"
@@ -154,10 +229,6 @@ echo "============ Theming gnome-shell ============"
 echo
 SHELLDESTDIR_11="gtk-theme/gnome-shell/src/gnome-shell-sass/"
 
-echo "------------ Modifying gnome-shell-sass/_common.scss ------------"
-SHELLFILE_11="_common.scss"
-
-sudo sed $SEDARG_1 -e 's/Fira Sans/Play, Fira Sans/gI' $SHELLDESTDIR_11$SHELLFILE_11
 
 echo "------------ Modifying gnome-shell-sass/_colors.scss ------------"
 SHELLFILE_12="_colors.scss"
@@ -174,6 +245,10 @@ SHELLFILE_14="_ubuntu-colors.scss"
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_11$SHELLFILE_14
 
+echo "------------ Modifying gnome-shell-sass/_high-contrast-colors.scss ------------"
+SHELLFILE_15="_high-contrast-colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_11$SHELLFILE_15
 
 # Modyfing necessary pictures
 echo "------------ Modifying checkbox-*.svg  and toggle-*.svg ------------"
@@ -202,6 +277,46 @@ sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_21$SHELLFILE_27
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_21$SHELLFILE_28
 
+### UPSTREAM VERSION _new_ ###
+SHELLDESTDIR_21="gtk-theme/gnome-shell/upstream/gnome-shell-sass/"
+
+echo "------------ Modifying gnome-shell-sass/_colors.scss ------------"
+SHELLFILE_22="_colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_21$SHELLFILE_22
+
+echo "------------ Modifying gnome-shell-sass/_high-contrast-colors.scss ------------"
+SHELLFILE_23="_high-contrast-colors.scss"
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_21$SHELLFILE_23
+
+
+# Modyfing necessary pictures
+echo "------------ Modifying checkbox-*.svg  and toggle-*.svg ------------"
+SHELLDESTDIR_31="gtk-theme/gnome-shell/upstream/"
+
+SHELLFILE_32="checkbox.svg"
+SHELLFILE_33="checkbox-dark.svg"
+SHELLFILE_34="checkbox-focused.svg"
+SHELLFILE_35="checkbox-focused-dark.svg"
+SHELLFILE_36="toggle-on.svg"
+SHELLFILE_37="toggle-on-dark.svg"
+SHELLFILE_38="toggle-on-intl.svg"
+
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_32
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_33
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_34
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_35
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_36
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_37
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_38
 
 
 # Building theme and installing
