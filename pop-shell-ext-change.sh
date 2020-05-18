@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script changes active color hint for pop-shell tiling extension
+
 # Defining sed arguments
 SEDARG_1=-i
 
