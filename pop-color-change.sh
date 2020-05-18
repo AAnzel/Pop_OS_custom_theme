@@ -336,9 +336,3 @@ echo
 cd ../../
 sudo rm -r gtk-theme
 
-echo "####################################################################################"
-echo "============ Changing pop-shell active hint color ============"
-POPSHELLFILE="/usr/share/gnome-shell/extensions/pop-shell@system76.com/dark.css"
-
-sudo sed $SEDARG_1 's/251, 184, 108/249, 112, 107/' $POPSHELLFILE
-
