@@ -296,12 +296,10 @@ echo "------------ Modifying checkbox-*.svg  and toggle-*.svg ------------"
 SHELLDESTDIR_31="gtk-theme/gnome-shell/upstream/"
 
 SHELLFILE_32="checkbox.svg"
-SHELLFILE_33="checkbox-dark.svg"
-SHELLFILE_34="checkbox-focused.svg"
-SHELLFILE_35="checkbox-focused-dark.svg"
-SHELLFILE_36="toggle-on.svg"
-SHELLFILE_37="toggle-on-dark.svg"
-SHELLFILE_38="toggle-on-intl.svg"
+SHELLFILE_33="checkbox-focused.svg"
+SHELLFILE_34="toggle-on.svg"
+SHELLFILE_35="toggle-on-dark.svg"
+SHELLFILE_36="toggle-on-intl.svg"
 
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_32
@@ -313,11 +311,6 @@ sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_34
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_35
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_36
-
-sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_37
-
-sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_31$SHELLFILE_38
-
 
 # Building theme and installing
 echo "####################################################################################"

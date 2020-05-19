@@ -41,3 +41,13 @@ s/ffa154/ed5353/gI
 s/FFAD00/FF0000/gI
 s/ffc27d/ff8c82/gI
 s/FFD7A1/FFA0A0/gI
+s/cddfe0/e0cece/gI
+s/f6f5f4/f2f2f2/gI
+s/241f31/301e1f/gI
+s/3d3846/424242/gI
+s/3584e4/e23434/gI
+s/2e3436/353535/gI
+s/acd1d5/d6adad/gI
+s/cddef0/e0cece/gI
+s/4f757c/7c4f4f/gI
+s/5b9ca5/a55b5b/gI
