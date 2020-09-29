@@ -6,7 +6,7 @@
 ### About:
 * These scripts were recently modified to support Pop!\_OS 20.04 (GNOME 3.36)
 * The script [pop-color-change.sh](pop-color-change.sh) changes orange and blue/teal accent colors with red accent color. This is done both for GTK and SHELL Pop!\_OS theme (light and dark variant).
-* The script [pop-shell-ext-change.sh](pop-shell-ext-change.sh) changes orange active hint color of the Pop Shell extension with red color. This is done both for the light and dark variant.
+* The script [pop-shell-ext-change.sh](pop-shell-ext-change.sh) changes orange active hint color of the Pop Shell extension with red color. This is done both for the light and dark variant. **This script is now unnecessary, since the version `0.1.0~1601333522~20.04~33b1199` of Pop Shell extension supports changing of active hint color.**
 
 
 ### Running:
