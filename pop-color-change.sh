@@ -305,7 +305,8 @@ SHELLFILE_41="checkbox.svg"
 SHELLFILE_42="checkbox-focused.svg"
 SHELLFILE_43="toggle-on.svg"
 SHELLFILE_44="toggle-on-dark.svg"
-SHELLFILE_44="toggle-on-intl.svg"
+SHELLFILE_45="toggle-on-intl.svg"
+SHELLFILE_46="toggle-on-hc.svg"
 
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_41$SHELLFILE_41
@@ -317,6 +318,8 @@ sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_41$SHELLFILE_43
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_41$SHELLFILE_44
 
 sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_41$SHELLFILE_45
+
+sudo sed $SEDARG_1 $SEDARG_2 $SEDCOLORSCHEME $SHELLDESTDIR_41$SHELLFILE_46
 
 # Building theme and installing
 echo "####################################################################################"
